@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Em busca da cidade perdida</title>
+</head>
+<body>
+    <main>
+        <!-- Passo 0: Escolha do local inicial -->
+        <section class="passo ativo" id="passo-0" role="region" aria-labelledby="titulo-passo-0">
+            <img src="img/cenario-passo0.png" alt="Cenário inicial da aventura com um livro aberto e uma carta">
+            <p id="titulo-passo-0">Um dia desses, dentro de um livro da biblioteca da escola, encontrei uma carta antiga sobre uma cidade perdida...</p>
+            <button class="btn-proximo" data-proximo="1" aria-label="Escolher Rio de Janeiro">Rio de Janeiro</button>
+            <button class="btn-proximo" data-proximo="2" aria-label="Escolher Pernambuco">Pernambuco</button>
+        </section>
+
+        <!-- Passo 1: Rio de Janeiro -->
+        <section class="passo" id="passo-1" role="region" aria-labelledby="titulo-passo-1">
+            <p id="titulo-passo-1">Você começa sua jornada no Rio de Janeiro, subindo o Pico da Tijuca ao amanhecer para encontrar a primeira pista.</p>
+            <button class="btn-proximo" data-proximo="3" aria-label="Procurar a pista no topo do pico">Procurar a pista no topo do pico</button>
+            <button class="btn-proximo" data-proximo="4" aria-label="Desistir e voltar para casa">Desistir e voltar para casa</button>
+        </section>
+
+        <!-- Adicione mais seções para os passos subsequentes como exemplos acima -->
+
+    </main>
+    <script src="script.js" type="module"></script>
+</body>
+</html>
